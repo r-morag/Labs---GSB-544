@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Roee Morag">
+<meta name="dcterms.date" content="2024-10-07">
 
-<title>lab2</title>
+<title>Lab 2 - Avocado Sales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,40 +82,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div id="cell-0" class="cell" data-execution_count="30">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Lab 2 - Avocado Sales"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author: <span class="st">"Roee Morag"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>date: <span class="st">"2024-10-07"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>output: </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  html_document:</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    theme: <span class="st">"cosmo"</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">---</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-cyan-fg ansi-bold">  Cell </span><span class="ansi-green-fg ansi-bold">In[30], line 1</span>
-
-<span class="ansi-yellow-fg ansi-bold">    ---</span>
-
-<span class="ansi-white-fg ansi-bold">       ^</span>
-
-<span class="ansi-red-fg ansi-bold">SyntaxError</span><span class="ansi-red-fg ansi-bold">:</span> invalid syntax
-</pre>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 2 - Avocado Sales</h1>
 </div>
-</div>
-</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Roee Morag </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 7, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <div id="cell-1" class="cell" data-execution_count="31">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-2" class="cell" data-execution_count="32">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>avocado_df <span class="op">=</span> pd.read_csv(<span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">morag</span><span class="ch">\\</span><span class="st">OneDrive</span><span class="ch">\\</span><span class="st">Documents</span><span class="ch">\\</span><span class="st">MSBA</span><span class="ch">\\</span><span class="st">GSB 544</span><span class="ch">\\</span><span class="st">Labs</span><span class="ch">\\</span><span class="st">Labs---GSB-544</span><span class="ch">\\</span><span class="st">Data</span><span class="ch">\\</span><span class="st">avocado-updated-2020.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-2" class="cell" data-execution_count="127">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>avocado_df <span class="op">=</span> pd.read_csv(<span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">morag</span><span class="ch">\\</span><span class="st">OneDrive</span><span class="ch">\\</span><span class="st">Documents</span><span class="ch">\\</span><span class="st">MSBA</span><span class="ch">\\</span><span class="st">GSB 544</span><span class="ch">\\</span><span class="st">Labs</span><span class="ch">\\</span><span class="st">Labs---GSB-544</span><span class="ch">\\</span><span class="st">Data</span><span class="ch">\\</span><span class="st">avocado-updated-2020.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-3" class="cell" data-execution_count="33">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>avocado_df.head(n<span class="op">=</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-3" class="cell" data-execution_count="128">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>avocado_df.head(n<span class="op">=</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -212,8 +220,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>This data set is about avocado prices in different regions/cities of the United States. Each row/observation represents a day of avocado sales in a specific city, i.e Albany, NY or Atlanta, GA. Each region/city has two observations for each date though, one showing their sales of conventional avocados and the other showing their sales of organic avocados. Each of thesscities is also a subset of a region which is a subset of the total United States column. Columns in the data set include average price of the avocados sold, the total volume of avocados sold, total bags, small bags, large bags, and extra large bags sold. The 4046, 4225, and 4770 columns are the price look up codes for smaller, medium, and large avocados and the columns refer to the amount sold on the given day.</p></li>
 <li><p>As far as cleaning this data set goes, I will clean it as I go through the problems - not quite sure how to organize this until I have intiative with the problems. I will rename some columns, such as 4046, to more intuitive naming schemes. I’m also going to create dummy variables for major and metro regions.</p></li>
 </ol>
-<div id="cell-6" class="cell" data-execution_count="34">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"geography"</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-6" class="cell" data-execution_count="129">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"geography"</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>array(['Albany', 'Atlanta', 'Baltimore/Washington', 'Boise', 'Boston', 'Buffalo/Rochester',
        'California', 'Charlotte', 'Chicago', 'Cincinnati/Dayton', 'Columbus', 'Dallas/Ft. Worth',
@@ -227,29 +235,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       dtype=object)</code></pre>
 </div>
 </div>
-<div id="cell-7" class="cell" data-execution_count="35">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>major_regions <span class="op">=</span> [<span class="st">"Northeast"</span>, <span class="st">"West"</span>, <span class="st">"South Central"</span>, <span class="st">"Southeast"</span>, <span class="st">"Great Lakes"</span>, <span class="st">"Plains"</span>, ]</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>metro_regions <span class="op">=</span> [<span class="st">'Baltimore/Washington'</span>, <span class="st">'Buffalo/Rochester'</span>, <span class="st">'Cincinnati/Dayton'</span>, <span class="st">'Dallas/Ft. Worth'</span>,</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Harrisburg/Scranton'</span>, <span class="st">'Hartford/Springfield'</span>, <span class="st">'Miami/Ft. Lauderdale'</span>, <span class="st">'New Orleans/Mobile'</span>,</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Phoenix/Tucson'</span>, <span class="st">'Raleigh/Greensboro'</span>, <span class="st">'Richmond/Norfolk'</span>, <span class="st">'West Tex/New Mexico'</span>]</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"major_region"</span>] <span class="op">=</span> np.where(avocado_df[<span class="st">"geography"</span>].isin(major_regions), <span class="dv">1</span>, <span class="dv">0</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"metro_region"</span>] <span class="op">=</span> np.where(avocado_df[<span class="st">"geography"</span>].isin(metro_regions), <span class="dv">1</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-7" class="cell" data-execution_count="130">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>major_regions <span class="op">=</span> [<span class="st">"Northeast"</span>, <span class="st">"West"</span>, <span class="st">"South Central"</span>, <span class="st">"Southeast"</span>, <span class="st">"Great Lakes"</span>, <span class="st">"Plains"</span>, ]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>metro_regions <span class="op">=</span> [<span class="st">'Baltimore/Washington'</span>, <span class="st">'Buffalo/Rochester'</span>, <span class="st">'Cincinnati/Dayton'</span>, <span class="st">'Dallas/Ft. Worth'</span>,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Harrisburg/Scranton'</span>, <span class="st">'Hartford/Springfield'</span>, <span class="st">'Miami/Ft. Lauderdale'</span>, <span class="st">'New Orleans/Mobile'</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Phoenix/Tucson'</span>, <span class="st">'Raleigh/Greensboro'</span>, <span class="st">'Richmond/Norfolk'</span>, <span class="st">'West Tex/New Mexico'</span>]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"major_region"</span>] <span class="op">=</span> np.where(avocado_df[<span class="st">"geography"</span>].isin(major_regions), <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"metro_region"</span>] <span class="op">=</span> np.where(avocado_df[<span class="st">"geography"</span>].isin(metro_regions), <span class="dv">1</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-8" class="cell" data-execution_count="36">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>avocado_df.rename(columns<span class="op">=</span>{<span class="st">"4046"</span>: <span class="st">"small_avocados"</span>, <span class="st">"4225"</span>: <span class="st">"large_avocados"</span>, <span class="st">"4770"</span>: <span class="st">"xlarge_avocados"</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-8" class="cell" data-execution_count="131">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>avocado_df.rename(columns<span class="op">=</span>{<span class="st">"4046"</span>: <span class="st">"small_avocados"</span>, <span class="st">"4225"</span>: <span class="st">"large_avocados"</span>, <span class="st">"4770"</span>: <span class="st">"xlarge_avocados"</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
 <li>Which major geographical region sold the most total organic, small Hass avocados in 2017?</li>
 </ol>
 <p>For this question, I will filter a data set to include only the year 2017, only organic avocado sales, and major regions. Then, I will group by region, sum along the column of small_avocados and sort by that column descending. I do not know which major geographical regions are covered in this dataset iwhtout combing through the 700ish entries but this method should give me a good idea.</p>
-<div id="cell-10" class="cell" data-execution_count="37">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>organic_2017 <span class="op">=</span> avocado_df[(avocado_df[<span class="st">"type"</span>] <span class="op">==</span> <span class="st">"organic"</span>) <span class="op">&amp;</span> (avocado_df[<span class="st">"year"</span>] <span class="op">==</span> <span class="dv">2017</span>) </span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                          <span class="op">&amp;</span> (avocado_df[<span class="st">"major_region"</span>] <span class="op">==</span> <span class="dv">1</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-10" class="cell" data-execution_count="132">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>organic_2017 <span class="op">=</span> avocado_df[(avocado_df[<span class="st">"type"</span>] <span class="op">==</span> <span class="st">"organic"</span>) <span class="op">&amp;</span> (avocado_df[<span class="st">"year"</span>] <span class="op">==</span> <span class="dv">2017</span>) </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                          <span class="op">&amp;</span> (avocado_df[<span class="st">"major_region"</span>] <span class="op">==</span> <span class="dv">1</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-11" class="cell" data-execution_count="38">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>small_haas_2017_sum <span class="op">=</span> organic_2017.groupby(<span class="st">"geography"</span>)[<span class="st">"small_avocados"</span>].<span class="bu">sum</span>().reset_index().sort_values(by<span class="op">=</span><span class="st">"small_avocados"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>small_haas_2017_sum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-11" class="cell" data-execution_count="133">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>small_haas_2017_sum <span class="op">=</span> organic_2017.groupby(<span class="st">"geography"</span>)[<span class="st">"small_avocados"</span>].<span class="bu">sum</span>().reset_index().sort_values(by<span class="op">=</span><span class="st">"small_avocados"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>small_haas_2017_sum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -304,17 +312,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Split the date variable into month, day, and year variables. In which month is the highest average volume of avocado sales?</li>
 </ol>
 <p>This is going to be a similar process to the last problem. First, we will create new variables for day and month (unnecessary for year as we already have a variable for that). Then we will filter out the data set to only include the geography of “Total US”. Finally, we will group by the month and average out the total volume of avocados sold.</p>
-<div id="cell-14" class="cell" data-execution_count="39">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"date"</span>] <span class="op">=</span> pd.to_datetime(avocado_df[<span class="st">"date"</span>])</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"month"</span>] <span class="op">=</span> avocado_df[<span class="st">"date"</span>].dt.month</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"day"</span>] <span class="op">=</span> avocado_df[<span class="st">"date"</span>].dt.day</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-14" class="cell" data-execution_count="134">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"date"</span>] <span class="op">=</span> pd.to_datetime(avocado_df[<span class="st">"date"</span>])</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"month"</span>] <span class="op">=</span> avocado_df[<span class="st">"date"</span>].dt.month</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>avocado_df[<span class="st">"day"</span>] <span class="op">=</span> avocado_df[<span class="st">"date"</span>].dt.day</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-15" class="cell" data-execution_count="40">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>total_us <span class="op">=</span> avocado_df[avocado_df[<span class="st">"geography"</span>] <span class="op">==</span> <span class="st">"Total U.S."</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-15" class="cell" data-execution_count="135">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>total_us <span class="op">=</span> avocado_df[avocado_df[<span class="st">"geography"</span>] <span class="op">==</span> <span class="st">"Total U.S."</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-16" class="cell" data-execution_count="41">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>total_us.groupby(<span class="st">"month"</span>)[<span class="st">"total_volume"</span>].mean().reset_index().sort_values(by<span class="op">=</span><span class="st">"total_volume"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-16" class="cell" data-execution_count="136">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>total_us.groupby(<span class="st">"month"</span>)[<span class="st">"total_volume"</span>].mean().reset_index().sort_values(by<span class="op">=</span><span class="st">"total_volume"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -399,12 +407,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Which metro area geographical regions sold the most total avocados? Plot side-by-side box-plots of the total volume for only the five metro geographical regions with the highest averages for the total_volume variable.</li>
 </ol>
 <p>First, I’m going to filter a data frame to one with only metro geographical regions. Then, we can group by region and sum the total volume.</p>
-<div id="cell-19" class="cell" data-execution_count="42">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>metro_regions <span class="op">=</span> avocado_df[avocado_df[<span class="st">"metro_region"</span>] <span class="op">==</span> <span class="dv">1</span>]</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>most_total_metro <span class="op">=</span>metro_regions.groupby(<span class="st">"geography"</span>)[<span class="st">"total_volume"</span>].<span class="bu">sum</span>().reset_index().sort_values(by<span class="op">=</span><span class="st">"total_volume"</span>, ascending<span class="op">=</span><span class="va">False</span>).head(n<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>most_total_metro</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-19" class="cell" data-execution_count="137">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>metro_regions <span class="op">=</span> avocado_df[avocado_df[<span class="st">"metro_region"</span>] <span class="op">==</span> <span class="dv">1</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>most_total_metro <span class="op">=</span>metro_regions.groupby(<span class="st">"geography"</span>)[<span class="st">"total_volume"</span>].<span class="bu">sum</span>().reset_index().sort_values(by<span class="op">=</span><span class="st">"total_volume"</span>, ascending<span class="op">=</span><span class="va">False</span>).head(n<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>most_total_metro</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -449,19 +457,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="cell-20" class="cell" data-execution_count="43">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The boxplot graph is not rendering correctly.</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_boxplot, theme, element_text</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>(ggplot(most_total_metro, aes(x<span class="op">=</span><span class="st">"geography"</span>, y<span class="op">=</span><span class="st">"total_volume"</span>, fill<span class="op">=</span><span class="st">"geography"</span>))</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_boxplot()</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(axis_text_x<span class="op">=</span>element_text(angle<span class="op">=</span><span class="dv">90</span>, hjust<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-20" class="cell" data-execution_count="138">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The boxplot graph is not rendering correctly.</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_boxplot, theme, element_text</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>(ggplot(most_total_metro, aes(x<span class="op">=</span><span class="st">"geography"</span>, y<span class="op">=</span><span class="st">"total_volume"</span>, fill<span class="op">=</span><span class="st">"geography"</span>))</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_boxplot()</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(axis_text_x<span class="op">=</span>element_text(angle<span class="op">=</span><span class="dv">90</span>, hjust<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab2_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="lab2_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -469,21 +477,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="6" type="1">
 <li>From your cleaned data set, create a data set with only these California regions and answer the following questions about these California regions only.</li>
 </ol>
-<div id="cell-22" class="cell" data-execution_count="44">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>california_regions <span class="op">=</span> [<span class="st">"Los Angeles"</span>, <span class="st">"San Diego"</span>, <span class="st">"Sacramento"</span>, <span class="st">"San Francisco"</span>]</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>california_df <span class="op">=</span> avocado_df[avocado_df[<span class="st">'geography'</span>].isin(california_regions)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-22" class="cell" data-execution_count="139">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>california_regions <span class="op">=</span> [<span class="st">"Los Angeles"</span>, <span class="st">"San Diego"</span>, <span class="st">"Sacramento"</span>, <span class="st">"San Francisco"</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>california_df <span class="op">=</span> avocado_df[avocado_df[<span class="st">'geography'</span>].isin(california_regions)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="7" type="1">
 <li>In which California regions is the price of organic versus conventional avocados most different? Support your answer with a few summary statistics AND a visualization.</li>
 </ol>
-<div id="cell-24" class="cell" data-execution_count="45">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>avg_price <span class="op">=</span> california_df.groupby([<span class="st">"geography"</span>, <span class="st">"type"</span>])[<span class="st">"average_price"</span>].mean().reset_index()</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>avg_price <span class="op">=</span> avg_price.pivot(index<span class="op">=</span><span class="st">"geography"</span>, columns<span class="op">=</span><span class="st">"type"</span>, values<span class="op">=</span><span class="st">"average_price"</span>).reset_index()</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>avg_price[<span class="st">"price_diff"</span>] <span class="op">=</span> avg_price[<span class="st">"organic"</span>] <span class="op">-</span> avg_price[<span class="st">"conventional"</span>]</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>avg_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-24" class="cell" data-execution_count="140">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>avg_price <span class="op">=</span> california_df.groupby([<span class="st">"geography"</span>, <span class="st">"type"</span>])[<span class="st">"average_price"</span>].mean().reset_index()</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>avg_price <span class="op">=</span> avg_price.pivot(index<span class="op">=</span><span class="st">"geography"</span>, columns<span class="op">=</span><span class="st">"type"</span>, values<span class="op">=</span><span class="st">"average_price"</span>).reset_index()</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>avg_price[<span class="st">"price_diff"</span>] <span class="op">=</span> avg_price[<span class="st">"organic"</span>] <span class="op">-</span> avg_price[<span class="st">"conventional"</span>]</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>avg_price</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 
@@ -533,19 +541,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="cell-25" class="cell" data-execution_count="46">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_bar, position_dodge, labs</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>(ggplot(avg_price, aes(x<span class="op">=</span><span class="st">'geography'</span>, y<span class="op">=</span><span class="st">'price_diff'</span>))</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span>position_dodge())</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Differences Between Organic and Conventional Avocados (CA)"</span>,</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">"Region"</span>,</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>         y<span class="op">=</span><span class="st">"Average Price"</span>)</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-25" class="cell" data-execution_count="141">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_bar, position_dodge, labs</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>(ggplot(avg_price, aes(x<span class="op">=</span><span class="st">'geography'</span>, y<span class="op">=</span><span class="st">'price_diff'</span>))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span>position_dodge())</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Differences Between Organic and Conventional Avocados (CA)"</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">"Region"</span>,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>         y<span class="op">=</span><span class="st">"Average Price"</span>)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab2_files/figure-html/cell-18-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="lab2_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -553,60 +561,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="8" type="1">
 <li>The following plot shows, for all four California regions, the proportion of the average Hass avocado sales that are small, large, or extra large; conventional vs.&nbsp;organic. Recreate the plot; you do not have to replicate the exact finishing touches - e.g., color, theme - but your plot should resemble the content of this plot.</li>
 </ol>
-<div id="cell-27" class="cell" data-execution_count="47">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"total_avocados"</span>] <span class="op">=</span> california_df[<span class="st">"small_avocados"</span>] <span class="op">+</span> california_df[<span class="st">"large_avocados"</span>] <span class="op">+</span> california_df[<span class="st">"xlarge_avocados"</span>]</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"small_prop"</span>] <span class="op">=</span> california_df[<span class="st">"small_avocados"</span>] <span class="op">/</span> california_df[<span class="st">"total_avocados"</span>]</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"large_prop"</span>] <span class="op">=</span> california_df[<span class="st">"large_avocados"</span>] <span class="op">/</span> california_df[<span class="st">"total_avocados"</span>]</span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"xlarge_prop"</span>] <span class="op">=</span> california_df[<span class="st">"xlarge_avocados"</span>] <span class="op">/</span> california_df[<span class="st">"total_avocados"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-27" class="cell" data-execution_count="142">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"total_avocados"</span>] <span class="op">=</span> california_df[<span class="st">"small_avocados"</span>] <span class="op">+</span> california_df[<span class="st">"large_avocados"</span>] <span class="op">+</span> california_df[<span class="st">"xlarge_avocados"</span>]</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"small_prop"</span>] <span class="op">=</span> california_df[<span class="st">"small_avocados"</span>] <span class="op">/</span> california_df[<span class="st">"total_avocados"</span>]</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"large_prop"</span>] <span class="op">=</span> california_df[<span class="st">"large_avocados"</span>] <span class="op">/</span> california_df[<span class="st">"total_avocados"</span>]</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>california_df[<span class="st">"xlarge_prop"</span>] <span class="op">=</span> california_df[<span class="st">"xlarge_avocados"</span>] <span class="op">/</span> california_df[<span class="st">"total_avocados"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>&lt;positron-console-cell-47&gt;:1: SettingWithCopyWarning: 
+<pre><code>&lt;positron-console-cell-142&gt;:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-&lt;positron-console-cell-47&gt;:3: SettingWithCopyWarning: 
+&lt;positron-console-cell-142&gt;:3: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-&lt;positron-console-cell-47&gt;:4: SettingWithCopyWarning: 
+&lt;positron-console-cell-142&gt;:4: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-&lt;positron-console-cell-47&gt;:5: SettingWithCopyWarning: 
+&lt;positron-console-cell-142&gt;:5: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy</code></pre>
 </div>
 </div>
-<div id="cell-28" class="cell" data-execution_count="48">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>avo_props <span class="op">=</span> california_df.groupby([<span class="st">"type"</span>, <span class="st">"geography"</span>]).agg({</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"small_prop"</span>: <span class="st">"mean"</span>,</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"large_prop"</span>: <span class="st">"mean"</span>,</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"xlarge_prop"</span>: <span class="st">"mean"</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>}).reset_index().melt(id_vars<span class="op">=</span>[<span class="st">"type"</span>, <span class="st">"geography"</span>], </span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>                                      var_name<span class="op">=</span><span class="st">"size"</span>, value_name<span class="op">=</span><span class="st">"proportion"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-28" class="cell" data-execution_count="143">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>avo_props <span class="op">=</span> california_df.groupby([<span class="st">"type"</span>, <span class="st">"geography"</span>]).agg({</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"small_prop"</span>: <span class="st">"mean"</span>,</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"large_prop"</span>: <span class="st">"mean"</span>,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"xlarge_prop"</span>: <span class="st">"mean"</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>}).reset_index().melt(id_vars<span class="op">=</span>[<span class="st">"type"</span>, <span class="st">"geography"</span>], </span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>                                      var_name<span class="op">=</span><span class="st">"size"</span>, value_name<span class="op">=</span><span class="st">"proportion"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-29" class="cell" data-execution_count="49">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_bar, position_stack, labs, theme, element_text, facet_wrap, scale_fill_discrete</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ChatGPT assisted on the bar plot</span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>(ggplot(avo_props, aes(x<span class="op">=</span><span class="st">"geography"</span>, y<span class="op">=</span><span class="st">"proportion"</span>, fill<span class="op">=</span><span class="st">"size"</span>))</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">"identity"</span>, position<span class="op">=</span>position_stack())</span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Proportion of Average Hass Avocado Sales by Size"</span>,</span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">"Region"</span>,</span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>         y<span class="op">=</span><span class="st">"Proportion"</span>)</span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(axis_text_x<span class="op">=</span>element_text(rotation<span class="op">=</span><span class="dv">45</span>, hjust<span class="op">=</span><span class="dv">1</span>))</span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> facet_wrap(<span class="st">"~ type"</span>)</span>
-<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-29" class="cell" data-execution_count="144">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_bar, position_stack, labs, theme, element_text, facet_wrap, scale_fill_discrete</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ChatGPT assisted on the bar plot</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>(ggplot(avo_props, aes(x<span class="op">=</span><span class="st">"geography"</span>, y<span class="op">=</span><span class="st">"proportion"</span>, fill<span class="op">=</span><span class="st">"size"</span>))</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">"identity"</span>, position<span class="op">=</span>position_stack())</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Proportion of Average Hass Avocado Sales by Size"</span>,</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">"Region"</span>,</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>         y<span class="op">=</span><span class="st">"Proportion"</span>)</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(axis_text_x<span class="op">=</span>element_text(rotation<span class="op">=</span><span class="dv">45</span>, hjust<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> facet_wrap(<span class="st">"~ type"</span>)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab2_files/figure-html/cell-21-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="lab2_files/figure-html/cell-20-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -615,72 +623,72 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <li>A joke in the media is that Millennials can’t afford houses, because they spend all their money buying avocado toast. Let’s use this data set to address that claim.</li>
 </ol>
 <p>I am going to have ChatGPT make a sample data frame of potential housing prices in the California regions. I will have it be based on real time housing data - ChatGPT references Zillow.</p>
-<div id="cell-31" class="cell" data-execution_count="119">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<div id="cell-31" class="cell" data-execution_count="145">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>housing_data <span class="op">=</span> {</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"date"</span>: [</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2015</span>, <span class="dv">1</span>, <span class="dv">4</span>), datetime(<span class="dv">2015</span>, <span class="dv">4</span>, <span class="dv">5</span>), datetime(<span class="dv">2015</span>, <span class="dv">7</span>, <span class="dv">5</span>), datetime(<span class="dv">2015</span>, <span class="dv">10</span>, <span class="dv">4</span>),</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2016</span>, <span class="dv">1</span>, <span class="dv">3</span>), datetime(<span class="dv">2016</span>, <span class="dv">4</span>, <span class="dv">3</span>), datetime(<span class="dv">2016</span>, <span class="dv">7</span>, <span class="dv">3</span>), datetime(<span class="dv">2016</span>, <span class="dv">10</span>, <span class="dv">2</span>),</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2017</span>, <span class="dv">1</span>, <span class="dv">1</span>), datetime(<span class="dv">2017</span>, <span class="dv">4</span>, <span class="dv">2</span>), datetime(<span class="dv">2017</span>, <span class="dv">7</span>, <span class="dv">2</span>), datetime(<span class="dv">2017</span>, <span class="dv">10</span>, <span class="dv">1</span>),</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2018</span>, <span class="dv">1</span>, <span class="dv">1</span>), datetime(<span class="dv">2018</span>, <span class="dv">4</span>, <span class="dv">1</span>), datetime(<span class="dv">2018</span>, <span class="dv">7</span>, <span class="dv">1</span>), datetime(<span class="dv">2018</span>, <span class="dv">10</span>, <span class="dv">7</span>),</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2019</span>, <span class="dv">1</span>, <span class="dv">7</span>), datetime(<span class="dv">2019</span>, <span class="dv">4</span>, <span class="dv">7</span>), datetime(<span class="dv">2019</span>, <span class="dv">7</span>, <span class="dv">7</span>), datetime(<span class="dv">2019</span>, <span class="dv">10</span>, <span class="dv">6</span>),</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2020</span>, <span class="dv">1</span>, <span class="dv">6</span>), datetime(<span class="dv">2020</span>, <span class="dv">4</span>, <span class="dv">5</span>), datetime(<span class="dv">2020</span>, <span class="dv">7</span>, <span class="dv">5</span>), datetime(<span class="dv">2020</span>, <span class="dv">10</span>, <span class="dv">4</span>)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"San Diego"</span>: [</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>        <span class="dv">490000</span>, <span class="dv">495000</span>, <span class="dv">500000</span>, <span class="dv">505000</span>, <span class="dv">510000</span>, <span class="dv">515000</span>, <span class="dv">520000</span>, <span class="dv">530000</span>,</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>        <span class="dv">540000</span>, <span class="dv">545000</span>, <span class="dv">550000</span>, <span class="dv">555000</span>, <span class="dv">570000</span>, <span class="dv">580000</span>, <span class="dv">590000</span>, <span class="dv">600000</span>,</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>        <span class="dv">610000</span>, <span class="dv">620000</span>, <span class="dv">630000</span>, <span class="dv">640000</span>, <span class="dv">650000</span>, <span class="dv">660000</span>, <span class="dv">670000</span>, <span class="dv">680000</span></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"San Francisco"</span>: [</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>        <span class="dv">1100000</span>, <span class="dv">1120000</span>, <span class="dv">1140000</span>, <span class="dv">1160000</span>, <span class="dv">1180000</span>, <span class="dv">1190000</span>, <span class="dv">1200000</span>, <span class="dv">1210000</span>,</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>        <span class="dv">1220000</span>, <span class="dv">1230000</span>, <span class="dv">1240000</span>, <span class="dv">1250000</span>, <span class="dv">1280000</span>, <span class="dv">1290000</span>, <span class="dv">1300000</span>, <span class="dv">1310000</span>,</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>        <span class="dv">1330000</span>, <span class="dv">1340000</span>, <span class="dv">1360000</span>, <span class="dv">1370000</span>, <span class="dv">1380000</span>, <span class="dv">1390000</span>, <span class="dv">1400000</span>, <span class="dv">1410000</span></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Sacramento"</span>: [</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>        <span class="dv">320000</span>, <span class="dv">325000</span>, <span class="dv">330000</span>, <span class="dv">335000</span>, <span class="dv">340000</span>, <span class="dv">345000</span>, <span class="dv">350000</span>, <span class="dv">355000</span>,</span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>        <span class="dv">360000</span>, <span class="dv">365000</span>, <span class="dv">370000</span>, <span class="dv">375000</span>, <span class="dv">380000</span>, <span class="dv">385000</span>, <span class="dv">390000</span>, <span class="dv">395000</span>,</span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>        <span class="dv">400000</span>, <span class="dv">405000</span>, <span class="dv">410000</span>, <span class="dv">415000</span>, <span class="dv">420000</span>, <span class="dv">425000</span>, <span class="dv">430000</span>, <span class="dv">435000</span></span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Los Angeles"</span>: [</span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>        <span class="dv">580000</span>, <span class="dv">585000</span>, <span class="dv">590000</span>, <span class="dv">595000</span>, <span class="dv">600000</span>, <span class="dv">605000</span>, <span class="dv">610000</span>, <span class="dv">615000</span>,</span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>        <span class="dv">620000</span>, <span class="dv">625000</span>, <span class="dv">630000</span>, <span class="dv">635000</span>, <span class="dv">640000</span>, <span class="dv">650000</span>, <span class="dv">660000</span>, <span class="dv">670000</span>,</span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>        <span class="dv">680000</span>, <span class="dv">690000</span>, <span class="dv">700000</span>, <span class="dv">710000</span>, <span class="dv">720000</span>, <span class="dv">730000</span>, <span class="dv">740000</span>, <span class="dv">750000</span></span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a>housing_df <span class="op">=</span> pd.DataFrame(housing_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-32" class="cell" data-execution_count="146">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>cali_df <span class="op">=</span> california_df[[<span class="st">"date"</span>, <span class="st">"geography"</span>, <span class="st">"total_avocados"</span>, <span class="st">"year"</span>]]</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>housing_data <span class="op">=</span> {</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"date"</span>: [</span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2015</span>, <span class="dv">1</span>, <span class="dv">4</span>), datetime(<span class="dv">2015</span>, <span class="dv">4</span>, <span class="dv">5</span>), datetime(<span class="dv">2015</span>, <span class="dv">7</span>, <span class="dv">5</span>), datetime(<span class="dv">2015</span>, <span class="dv">10</span>, <span class="dv">4</span>),</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2016</span>, <span class="dv">1</span>, <span class="dv">3</span>), datetime(<span class="dv">2016</span>, <span class="dv">4</span>, <span class="dv">3</span>), datetime(<span class="dv">2016</span>, <span class="dv">7</span>, <span class="dv">3</span>), datetime(<span class="dv">2016</span>, <span class="dv">10</span>, <span class="dv">2</span>),</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2017</span>, <span class="dv">1</span>, <span class="dv">1</span>), datetime(<span class="dv">2017</span>, <span class="dv">4</span>, <span class="dv">2</span>), datetime(<span class="dv">2017</span>, <span class="dv">7</span>, <span class="dv">2</span>), datetime(<span class="dv">2017</span>, <span class="dv">10</span>, <span class="dv">1</span>),</span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2018</span>, <span class="dv">1</span>, <span class="dv">1</span>), datetime(<span class="dv">2018</span>, <span class="dv">4</span>, <span class="dv">1</span>), datetime(<span class="dv">2018</span>, <span class="dv">7</span>, <span class="dv">1</span>), datetime(<span class="dv">2018</span>, <span class="dv">10</span>, <span class="dv">7</span>),</span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2019</span>, <span class="dv">1</span>, <span class="dv">7</span>), datetime(<span class="dv">2019</span>, <span class="dv">4</span>, <span class="dv">7</span>), datetime(<span class="dv">2019</span>, <span class="dv">7</span>, <span class="dv">7</span>), datetime(<span class="dv">2019</span>, <span class="dv">10</span>, <span class="dv">6</span>),</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>        datetime(<span class="dv">2020</span>, <span class="dv">1</span>, <span class="dv">6</span>), datetime(<span class="dv">2020</span>, <span class="dv">4</span>, <span class="dv">5</span>), datetime(<span class="dv">2020</span>, <span class="dv">7</span>, <span class="dv">5</span>), datetime(<span class="dv">2020</span>, <span class="dv">10</span>, <span class="dv">4</span>)</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    ],</span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"San Diego"</span>: [</span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>        <span class="dv">490000</span>, <span class="dv">495000</span>, <span class="dv">500000</span>, <span class="dv">505000</span>, <span class="dv">510000</span>, <span class="dv">515000</span>, <span class="dv">520000</span>, <span class="dv">530000</span>,</span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>        <span class="dv">540000</span>, <span class="dv">545000</span>, <span class="dv">550000</span>, <span class="dv">555000</span>, <span class="dv">570000</span>, <span class="dv">580000</span>, <span class="dv">590000</span>, <span class="dv">600000</span>,</span>
-<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>        <span class="dv">610000</span>, <span class="dv">620000</span>, <span class="dv">630000</span>, <span class="dv">640000</span>, <span class="dv">650000</span>, <span class="dv">660000</span>, <span class="dv">670000</span>, <span class="dv">680000</span></span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>    ],</span>
-<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"San Francisco"</span>: [</span>
-<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>        <span class="dv">1100000</span>, <span class="dv">1120000</span>, <span class="dv">1140000</span>, <span class="dv">1160000</span>, <span class="dv">1180000</span>, <span class="dv">1190000</span>, <span class="dv">1200000</span>, <span class="dv">1210000</span>,</span>
-<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>        <span class="dv">1220000</span>, <span class="dv">1230000</span>, <span class="dv">1240000</span>, <span class="dv">1250000</span>, <span class="dv">1280000</span>, <span class="dv">1290000</span>, <span class="dv">1300000</span>, <span class="dv">1310000</span>,</span>
-<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a>        <span class="dv">1330000</span>, <span class="dv">1340000</span>, <span class="dv">1360000</span>, <span class="dv">1370000</span>, <span class="dv">1380000</span>, <span class="dv">1390000</span>, <span class="dv">1400000</span>, <span class="dv">1410000</span></span>
-<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a>    ],</span>
-<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Sacramento"</span>: [</span>
-<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a>        <span class="dv">320000</span>, <span class="dv">325000</span>, <span class="dv">330000</span>, <span class="dv">335000</span>, <span class="dv">340000</span>, <span class="dv">345000</span>, <span class="dv">350000</span>, <span class="dv">355000</span>,</span>
-<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a>        <span class="dv">360000</span>, <span class="dv">365000</span>, <span class="dv">370000</span>, <span class="dv">375000</span>, <span class="dv">380000</span>, <span class="dv">385000</span>, <span class="dv">390000</span>, <span class="dv">395000</span>,</span>
-<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a>        <span class="dv">400000</span>, <span class="dv">405000</span>, <span class="dv">410000</span>, <span class="dv">415000</span>, <span class="dv">420000</span>, <span class="dv">425000</span>, <span class="dv">430000</span>, <span class="dv">435000</span></span>
-<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a>    ],</span>
-<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Los Angeles"</span>: [</span>
-<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a>        <span class="dv">580000</span>, <span class="dv">585000</span>, <span class="dv">590000</span>, <span class="dv">595000</span>, <span class="dv">600000</span>, <span class="dv">605000</span>, <span class="dv">610000</span>, <span class="dv">615000</span>,</span>
-<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a>        <span class="dv">620000</span>, <span class="dv">625000</span>, <span class="dv">630000</span>, <span class="dv">635000</span>, <span class="dv">640000</span>, <span class="dv">650000</span>, <span class="dv">660000</span>, <span class="dv">670000</span>,</span>
-<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a>        <span class="dv">680000</span>, <span class="dv">690000</span>, <span class="dv">700000</span>, <span class="dv">710000</span>, <span class="dv">720000</span>, <span class="dv">730000</span>, <span class="dv">740000</span>, <span class="dv">750000</span></span>
-<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb23-33"><a href="#cb23-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-34"><a href="#cb23-34" aria-hidden="true" tabindex="-1"></a>housing_df <span class="op">=</span> pd.DataFrame(housing_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>cali_df <span class="op">=</span> cali_df.groupby([<span class="st">"date"</span>, <span class="st">"geography"</span>])[<span class="st">"total_avocados"</span>].<span class="bu">sum</span>().reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-32" class="cell" data-execution_count="120">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>cali_df <span class="op">=</span> california_df[[<span class="st">"date"</span>, <span class="st">"geography"</span>, <span class="st">"total_avocados"</span>, <span class="st">"year"</span>]]</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>cali_df <span class="op">=</span> cali_df.groupby([<span class="st">"date"</span>, <span class="st">"geography"</span>])[<span class="st">"total_avocados"</span>].<span class="bu">sum</span>().reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-33" class="cell" data-execution_count="147">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>housing_df <span class="op">=</span> housing_df.melt(id_vars<span class="op">=</span>[<span class="st">"date"</span>], </span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>                                      var_name<span class="op">=</span><span class="st">"geography"</span>, </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>                                      value_name<span class="op">=</span><span class="st">"median_housing_price"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-33" class="cell" data-execution_count="121">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>housing_df <span class="op">=</span> housing_df.melt(id_vars<span class="op">=</span>[<span class="st">"date"</span>], </span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>                                      var_name<span class="op">=</span><span class="st">"geography"</span>, </span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>                                      value_name<span class="op">=</span><span class="st">"median_housing_price"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-34" class="cell" data-execution_count="148">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>housing_avocado_df <span class="op">=</span> pd.merge(housing_df, cali_df, on<span class="op">=</span>[<span class="st">'date'</span>, <span class="st">'geography'</span>], how<span class="op">=</span><span class="st">"inner"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-34" class="cell" data-execution_count="122">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>housing_avocado_df <span class="op">=</span> pd.merge(housing_df, cali_df, on<span class="op">=</span>[<span class="st">'date'</span>, <span class="st">'geography'</span>], how<span class="op">=</span><span class="st">"inner"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-35" class="cell" data-execution_count="125">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_line, facet_wrap, labs, theme_classic</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>(ggplot(housing_avocado_df, aes(x<span class="op">=</span><span class="st">"date"</span>))</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_line(aes(y<span class="op">=</span><span class="st">"median_housing_price"</span>), color<span class="op">=</span><span class="st">"black"</span>, size<span class="op">=</span><span class="dv">1</span>, linetype<span class="op">=</span><span class="st">"solid"</span>)</span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_line(aes(y<span class="op">=</span><span class="st">"total_avocados"</span>), color<span class="op">=</span><span class="st">"green"</span>, size<span class="op">=</span><span class="dv">1</span>, linetype<span class="op">=</span><span class="st">"dashed"</span>)</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> facet_wrap(<span class="st">"~ geography"</span>)</span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Median Housing Prices and Total Avocados Sold"</span>,</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">"Date"</span>,</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>         y<span class="op">=</span><span class="st">"Value"</span>,</span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">"Geography"</span>)</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_classic()</span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-35" class="cell" data-execution_count="149">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, aes, geom_line, facet_wrap, labs, theme_classic</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>(ggplot(housing_avocado_df, aes(x<span class="op">=</span><span class="st">"date"</span>))</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_line(aes(y<span class="op">=</span><span class="st">"median_housing_price"</span>), color<span class="op">=</span><span class="st">"black"</span>, size<span class="op">=</span><span class="dv">1</span>, linetype<span class="op">=</span><span class="st">"solid"</span>)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_line(aes(y<span class="op">=</span><span class="st">"total_avocados"</span>), color<span class="op">=</span><span class="st">"green"</span>, size<span class="op">=</span><span class="dv">1</span>, linetype<span class="op">=</span><span class="st">"dashed"</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> facet_wrap(<span class="st">"~ geography"</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">"Median Housing Prices and Total Avocados Sold"</span>,</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>         x<span class="op">=</span><span class="st">"Date"</span>,</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>         y<span class="op">=</span><span class="st">"Value"</span>,</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">"Geography"</span>)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme_classic()</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab2_files/figure-html/cell-26-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="lab2_files/figure-html/cell-25-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
